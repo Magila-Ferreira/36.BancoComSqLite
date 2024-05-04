@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BancoComSqLite.Excluir"
+             Title="Excluir">
+    <VerticalStackLayout>
+        <Label Text="Nome do paciente"></Label>
+        <Entry Text="{Binding Nome}" IsReadOnly="True"/>
+
+        <Label Text="Idade do paciente"></Label>
+        <Entry Text="{Binding Idade}" IsReadOnly="True"/>
+
+        <Label Text="Cor do atendimento"></Label>
+        <Entry Text="{Binding Cor}" IsReadOnly="True"/>
+
+        <Button Text="Excluir" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
